@@ -47,5 +47,12 @@ public class Vehicle {
         return VRN;
     }
     
+    @Override
+    public String toString()
+    {
+        return String.format("VRN: %s    Make and Model: %s     Odometer: %.2f", getVRN(), 
+                                                                                 getMakeAndModel(),
+                                                                                 getOdometer());
+    }
    
 }
